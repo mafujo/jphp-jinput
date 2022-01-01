@@ -1,0 +1,22 @@
+name: jphp-jinput
+version: 1.0.0
+description: The jphp JInput Library
+
+plugins:
+  - Gradle
+
+gradle:
+  deps:
+    - "net.java.jinput:jinput:2.0.5"
+    - "net.java.jinput:jinput-platform:2.0.7"
+
+deps:
+  jphp-core: '^1.3.0'
+
+config:
+  ignore:
+    - "./gradle/**"
+    - "./sandbox/**"
+    - "./build.gradle"
+    - "gradlew.bat"
+    - "gradlew"
